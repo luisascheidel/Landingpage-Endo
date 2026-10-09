@@ -137,31 +137,35 @@
        BUTTONS – Einheitliche Gestaltung der Links
        ================================================== */
 
-    .btn {
-      display: inline-block;
-      padding: 13px 21px;
-      background: var(--navy);
-      color: var(--white);
-      text-decoration: none;
-      border: 1px solid var(--navy);
-      border-radius: 3px;
-      font: inherit;
-      font-weight: 700;
-      cursor: pointer;
-      transition: opacity .2s, transform .2s;
-    }
+     .button {
+        display: inline-block;
+        background: var(--navy);
+        color: white;
+        padding: 14px 28px;
+        border-radius: 30px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        transition: background 0.3s, transform 0.3s;
+        }
 
-    .btn:hover {
-      opacity: .88;
-      transform: translateY(-1px);
-    }
+      .button:hover {
+         background: var(--navy-dark);
+         transform: translateY(-2px);
+        }
 
-    .btn-light {
-      background: var(--white);
-      color: var(--navy);
-      border-color: var(--white);
-    }
+      .button-light {
+         background: transparent;
+         color: var(--navy);
+         border: 1px solid var(--navy);
+         margin-left: 10px;
+        }
 
+      .button-light:hover {
+         background: var(--navy);
+         color: white;
+        }
+    
+   
 
     /* ==================================================
        HEADER – Logo und Navigation
