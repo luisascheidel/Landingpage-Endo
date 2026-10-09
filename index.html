@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#273951">
+  <meta name="description" content="Individuelle 1:1-Begleitung bei Endometriose. Finde Orientierung und alltagstaugliche Strategien, die zu dir passen.">
+  <title>Individuelle Endometriose-Begleitung | Luisa Scheidel</title>
+
+  <style>
+    :root {
+      --navy: #273951;
+      --beige: #e9e6df;
+      --light: #f4f2ed;
+      --text: #3d4652;
+      --muted: #727985;
+      --line: #d9d5cd;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font: 16px/1.75 Arial, sans-serif;
+    }
+
+    h1, h2 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+
+    p { max-width: 720px; }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: normal;
+      letter-spacing: 2px;
+      font-size: .7rem;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      border: 1px solid var(--navy);
+      border-radius: 3px;
+      font: inherit;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover { opacity: .88; }
+
+    .hero, .soft { background: var(--light); }
+
+    section { padding: 78px 0; }
+
+    .hero { padding: 85px 0; }
+
+    .eyebrow {
+      color: #6d7c67;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    .hero p { font-size: 1.08rem; }
+
+    .hero-art {
+      margin-top: 35px;
+      min-height: 180px;
+      padding: 35px;
+      background: linear-gradient(135deg, #dce1d5, #e9e6df);
+      display: flex;
+      align-items: end;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+    }
+
+    .center { text-align: center; }
+    .center p { margin-inline: auto; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 35px 0;
+    }
+
+    .card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--line);
+    }
+
+    .card h3 { color: var(--navy); }
+
+    .cta {
+      padding: 42px 25px;
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 { color: white; }
+    .cta p { margin: 0 auto 24px; }
+
+    .cta .btn {
+      background: white;
+      color: var(--navy);
+      border-color: white;
+    }
+
+    .contact-form {
+      max-width: 650px;
+      margin: 30px auto 0;
+      display: grid;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: grid;
+      gap: 6px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: white;
+      color: var(--text);
+      font: inherit;
+    }
+
+    .contact-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .consent {
+      display: flex !important;
+      grid-template-columns: auto 1fr;
+      align-items: flex-start;
+      gap: 10px !important;
+      font-size: .9rem;
+      font-weight: normal !important;
+    }
+
+    .consent input {
+      width: auto !important;
+      margin-top: 7px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    footer {
+      padding: 30px 0;
+      background: #1d2b3e;
+      color: white;
+    }
+
+    footer a { color: white; }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      section { padding: 55px 0; }
+      .hero { padding: 55px 0; }
+      .cards { grid-template-columns: 1fr; }
+      .nav { min-height: 68px; }
+      .btn { text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#start">
+        LUISA SCHEIDEL
+        <small>Triforce of Health</small>
+      </a>
+      <a class="btn" href="#kontakt">Kennenlernen ↗</a>
+    </div>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Individuelle Endometriose-Begleitung</div>
+
+        <h1>Du planst deinen Tag. Und dann kommt der Schmerz – und wirft alles über den Haufen.</h1>
+
+        <p>Du hast recherchiert, ausprobiert und versucht, deinen Alltag trotz Endometriose zu organisieren. Doch wenn die Schmerzen kommen, werden Pläne plötzlich nebensächlich.</p>
+
+        <p>In meiner individuellen 1:1-Begleitung schaffen wir Klarheit, schauen auf deine persönliche Situation und entwickeln alltagstaugliche Strategien, die zu dir, deinem Körper und deinem Leben passen.</p>
+
+        <p><a class="btn" href="#kontakt">Kennenlerngespräch vereinbaren ↗</a></p>
+
+        <div class="hero-art">
+          Verstehen statt nur funktionieren.<br>
+          Schritt für Schritt zu mehr Orientierung.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center">
+        <div class="eyebrow">Individuell statt Schema F</div>
+        <h2>Dein Alltag ist persönlich. Deine Begleitung sollte es auch sein.</h2>
+        <p>Gemeinsam betrachten wir, was dich gerade beschäftigt, welche Fragen du hast und welche nächsten Schritte zu deiner Lebensrealität passen.</p>
+        <p><a class="btn" href="#kontakt">Lass uns kennenlernen ↗</a></p>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="container center">
+        <div class="eyebrow">Du musst nicht alles allein tragen</div>
+        <h2>Vielleicht erkennst du dich hier wieder</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Wenn Pläne unsicher werden</h3>
+            <p>Du möchtest deinen Alltag gestalten, weißt aber manchmal nicht, wie es dir an einem bestimmten Tag gehen wird.</p>
+          </article>
+
+          <article class="card">
+            <h3>Wenn du Antworten suchst</h3>
+            <p>Du hast viel gelesen und ausprobiert und möchtest besser einordnen, was für dich hilfreich sein könnte.</p>
+          </article>
+
+          <article class="card">
+            <h3>Wenn du deine Grenzen stärken möchtest</h3>
+            <p>Du möchtest deine Bedürfnisse ernst nehmen und im Alltag besser für dich einstehen.</p>
+          </article>
+        </div>
+
+        <a class="btn" href="#kontakt">Darüber sprechen ↗</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center">
+        <div class="eyebrow">Ein persönlicher Raum für dich</div>
+        <h2>Ich bin Luisa Scheidel.</h2>
+        <p>Ich begleite dich dabei, deine persönliche Situation besser zu verstehen und stimmige nächste Schritte für deinen Alltag zu entwickeln.</p>
+        <p>Hier kannst du deine persönliche Geschichte, deine Qualifikationen und deine Arbeitsweise ergänzen.</p>
+        <a class="btn" href="#kontakt">Kennenlerngespräch vereinbaren ↗</a>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="container center">
+        <div class="eyebrow">Dein nächster Schritt</div>
+        <h2>Ein erster Schritt darf unkompliziert sein.</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>01 · Kennenlernen</h3>
+            <p>Wir sprechen über dein Anliegen und deine Fragen.</p>
+          </article>
+          <article class="card">
+            <h3>02 · Orientierung</h3>
+            <p>Wir sortieren, was dich gerade beschäftigt.</p>
+          </article>
+          <article class="card">
+            <h3>03 · Nächste Schritte</h3>
+            <p>Du entscheidest in Ruhe, ob eine Zusammenarbeit zu dir passt.</p>
+          </article>
+        </div>
+
+        <a class="btn" href="#kontakt">Jetzt Kontakt aufnehmen ↗</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center">
+        <div class="eyebrow">Gut zu wissen</div>
+        <h2>Häufige Fragen</h2>
+
+        <details>
+          <summary>Ist das Coaching eine medizinische Behandlung?</summary>
+          <p>Nein. Das Coaching ersetzt keine ärztliche Diagnose, Beratung oder Behandlung.</p>
+        </details>
+
+        <details>
+          <summary>Was passiert beim Kennenlerngespräch?</summary>
+          <p>Wir lernen uns kennen, sprechen über dein Anliegen und klären offene Fragen.</p>
+        </details>
+
+        <details>
+          <summary>Was kostet die Begleitung?</summary>
+          <p>Ergänze hier vor Veröffentlichung deine konkreten Preise und Angebotsdetails.</p>
+        </details>
+
+        <p><a class="btn" href="#kontakt">Weitere Fragen stellen ↗</a></p>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container">
+        <div class="cta">
+          <div class="eyebrow">Dein erster Schritt</div>
+          <h2>Du musst nicht alle Antworten haben, um ein Gespräch zu beginnen.</h2>
+          <p>Schreib mir oder vereinbare ein unverbindliches Kennenlernen.</p>
+          <a class="btn" href="https://calendly.com/DEIN-LINK" target="_blank" rel="noopener noreferrer">Kennenlerngespräch buchen ↗</a>
+        </div>
+
+        <div class="center" style="padding-top:45px">
+          <h2>Schreib mir eine Nachricht</h2>
+          <p>Du hast eine Frage oder möchtest unverbindlich Kontakt aufnehmen? Ich freue mich auf deine Nachricht.</p>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/DEINE_FORM_ID"
+            method="POST"
+          >
+            <label for="name">
+              Dein Name
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </label>
+
+            <label for="email">
+              Deine E-Mail-Adresse
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </label>
+
+            <label for="message">
+              Deine Nachricht
+              <textarea id="message" name="message" required></textarea>
+            </label>
+
+            <label class="consent">
+              <input type="checkbox" name="datenschutz-bestaetigt" required>
+              <span>Ich habe die Datenschutzhinweise gelesen und stimme der Verarbeitung meiner Angaben zur Beantwortung meiner Anfrage zu.</span>
+            </label>
+
+            <input type="hidden" name="_subject" value="Neue Anfrage – Endometriose-Begleitung">
+
+            <button class="btn" type="submit">Nachricht senden ↗</button>
+
+            <p class="note">Bitte sende über dieses Formular keine sensiblen medizinischen Informationen. Verlinke deine Datenschutzerklärung und prüfe vor Veröffentlichung die datenschutzrechtlichen Anforderungen.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>Luisa Scheidel · Triforce of Health</strong>
+      <p>Individuelle Endometriose-Begleitung</p>
+      <div class="footer-links">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+      <p>© <span id="year">2026</span> Luisa Scheidel</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
