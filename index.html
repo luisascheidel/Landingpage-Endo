@@ -740,90 +740,91 @@
 
         <!-- Kontaktformular -->
 
-        <div class="center" style="padding-top:45px">
+<div class="contact-item" id="kontaktformular" style="margin-top:28px">
 
-          <h2>Schreib mir eine Nachricht</h2>
+  <h3>Schreib mir – ich melde mich bei dir</h3>
 
-          <p>
-            Du hast eine Frage oder möchtest unverbindlich
-            Kontakt aufnehmen? Ich freue mich auf deine Nachricht.
-          </p>
+  <p>Fülle das Formular aus, damit ich dich zur Kontaktaufnahme erreichen kann.</p>
 
-          <!-- TODO: DEINE_FORM_ID durch deine Formspree-ID ersetzen -->
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/DEINE_FORM_ID"
-            method="POST"
-          >
+  <form
+    class="formspree-form"
+    action="https://formspree.io/f/xjygwdqn"
+    method="POST"
+  >
 
-            <label for="name">
-              Dein Name
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autocomplete="name"
-                required
-              >
-            </label>
+    <label for="kontakt-name">
+      Dein Name
+      <input
+        id="kontakt-name"
+        name="name"
+        type="text"
+        autocomplete="name"
+        required
+      >
+    </label>
 
-            <label for="email">
-              Deine E-Mail-Adresse
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-              >
-            </label>
+    <label for="kontakt-email">
+      Deine E-Mail-Adresse
+      <input
+        id="kontakt-email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+      >
+    </label>
 
-            <label for="message">
-              Deine Nachricht
-              <textarea
-                id="message"
-                name="message"
-                required
-              ></textarea>
-            </label>
+    <label for="kontakt-telefon">
+      Deine Telefonnummer
+      <input
+        id="kontakt-telefon"
+        name="phone"
+        type="tel"
+        autocomplete="tel"
+        placeholder="Optional"
+      >
+    </label>
 
-            <label class="consent">
-              <input
-                type="checkbox"
-                name="datenschutz-bestaetigt"
-                required
-              >
-              <span>
-                Ich habe die Datenschutzhinweise gelesen und
-                stimme der Verarbeitung meiner Angaben zur
-                Beantwortung meiner Anfrage zu.
-              </span>
-            </label>
+    <label for="kontakt-nachricht">
+      Deine Nachricht
+      <textarea
+        id="kontakt-nachricht"
+        name="message"
+        required
+      ></textarea>
+    </label>
 
-            <input
-              type="hidden"
-              name="_subject"
-              value="Neue Anfrage – Endometriose-Begleitung"
-            >
+    <label class="consent">
+      <input
+        type="checkbox"
+        name="datenschutz-bestaetigt"
+        required
+      >
+      <span>
+        Ich habe die Datenschutzhinweise gelesen und bin
+        mit der Verarbeitung meiner Angaben zur Beantwortung
+        meiner Anfrage einverstanden.
+      </span>
+    </label>
 
-            <button class="btn" type="submit">
-              Nachricht senden ↗
-            </button>
+    <input
+      type="hidden"
+      name="_subject"
+      value="Neue Anfrage – Endometriose-Begleitung"
+    >
 
-            <p class="note">
-              Bitte sende über dieses Formular keine sensiblen
-              medizinischen Informationen. Verlinke deine
-              Datenschutzerklärung und prüfe vor Veröffentlichung
-              die datenschutzrechtlichen Anforderungen.
-            </p>
+    <button class="btn" type="submit">
+      Nachricht senden ↗
+    </button>
 
-          </form>
-        </div>
+    <p class="form-note">
+      Bitte teile über dieses Formular keine unnötigen medizinischen Details.
+      Lies vor dem Absenden die Datenschutzhinweise.
+    </p>
 
-      </div>
-    </section>
+  </form>
 
-  </main>
+</div>
 
 
   <!-- ==================================================
