@@ -858,7 +858,28 @@
   <script>
     document.getElementById("year").textContent =
       new Date().getFullYear();
-  </script>
+    </script>
 
+  <script>
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+const navigationEntry = performance.getEntriesByType('navigation')[0];
+
+if (navigationEntry && navigationEntry.type === 'reload') {
+  history.scrollRestoration = 'manual';
+
+  if (location.hash) {
+    history.replaceState(
+      null,
+      '',
+      location.pathname + location.search
+    );
+  }
+
+  window.scrollTo(0, 0);
+}
+</script>
+  
 </body>
 </html>
